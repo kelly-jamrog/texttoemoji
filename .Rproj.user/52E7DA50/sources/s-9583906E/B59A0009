@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543261511419.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B59A0009",
+    "lastKnownWriteTime" : 7226435094589303907,
+    "last_content_update" : 1543261511419,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "191A4C40",
+        "caption" : "raw_usermedia",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=raw_usermedia&cache_key=191A4C40",
+        "displayedObservations" : 794,
+        "environment" : "",
+        "object" : "raw_usermedia",
+        "preview" : 0,
+        "totalObservations" : 794,
+        "variables" : 16
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

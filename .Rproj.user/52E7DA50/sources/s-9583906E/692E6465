@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543614849712.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "692E6465",
+    "lastKnownWriteTime" : 4697063233763147782,
+    "last_content_update" : 1543614849712,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "B0D8003F",
+        "caption" : "emoji_df",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=emoji_df&cache_key=B0D8003F",
+        "displayedObservations" : "3567",
+        "environment" : "",
+        "object" : "emoji_df",
+        "preview" : "0",
+        "totalObservations" : "3567",
+        "variables" : "4"
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

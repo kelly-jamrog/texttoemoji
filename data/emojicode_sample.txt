@@ -1,0 +1,24 @@
+1F600         ; Emoji                #  6.1  [1] (😀)       grinning face
+1F601..1F610  ; Emoji                #  6.0  [16] (😁..😐)    beaming face with smiling eyes..neutral face
+1F611         ; Emoji                #  6.1  [1] (😑)       expressionless face
+1F612..1F614  ; Emoji                #  6.0  [3] (😒..😔)    unamused face..pensive face
+1F615         ; Emoji                #  6.1  [1] (😕)       confused face
+1F616         ; Emoji                #  6.0  [1] (😖)       confounded face
+1F617         ; Emoji                #  6.1  [1] (😗)       kissing face
+1F618         ; Emoji                #  6.0  [1] (😘)       face blowing a kiss
+1F619         ; Emoji                #  6.1  [1] (😙)       kissing face with smiling eyes
+1F61A         ; Emoji                #  6.0  [1] (😚)       kissing face with closed eyes
+1F61B         ; Emoji                #  6.1  [1] (😛)       face with tongue
+1F61C..1F61E  ; Emoji                #  6.0  [3] (😜..😞)    winking face with tongue..disappointed face
+1F61F         ; Emoji                #  6.1  [1] (😟)       worried face
+1F620..1F625  ; Emoji                #  6.0  [6] (😠..😥)    angry face..sad but relieved face
+1F626..1F627  ; Emoji                #  6.1  [2] (😦..😧)    frowning face with open mouth..anguished face
+1F628..1F62B  ; Emoji                #  6.0  [4] (😨..😫)    fearful face..tired face
+1F62C         ; Emoji                #  6.1  [1] (😬)       grimacing face
+1F62D         ; Emoji                #  6.0  [1] (😭)       loudly crying face
+1F62E..1F62F  ; Emoji                #  6.1  [2] (😮..😯)    face with open mouth..hushed face
+1F630..1F633  ; Emoji                #  6.0  [4] (😰..😳)    anxious face with sweat..flushed face
+1F634         ; Emoji                #  6.1  [1] (😴)       sleeping face
+1F635..1F640  ; Emoji                #  6.0  [12] (😵..🙀)    dizzy face..weary cat face
+1F641..1F642  ; Emoji                #  7.0  [2] (🙁..🙂)    slightly frowning face..slightly smiling face
+1F643..1F644  ; Emoji                #  8.0  [2] (🙃..🙄)    upside-down face..face with rolling eyes

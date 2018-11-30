@@ -1,0 +1,89 @@
+## Playing around with emojis
+
+##------------------------------------
+## Preparing test emoji string
+##------------------------------------
+
+## sample emoji line
+txt <- "i will find out tomorrow 😬"
+txt
+
+test <- "hi 😬😬😬"
+nchar(as.character(test))
+x <- parse(text = paste0("'", test, "'"))
+y <- x[[1]]
+nchar(y)
+y
+
+
+
+library(utf8)
+utf8_print(txt)
+ x <- utf8_encode("hi 😬😬😬")
+library(NLP)
+library(Unicode)
+as.String(txt)
+nchar(x)
+str(txt)
+iconvlist()
+localeToCharset()
+x <- iconv(test, "UTF8", "ASCII", "byte")
+as.u_chx-pattern <- "<f0><9f><98><ac>"
+gsub(pattern, "yay ", x)
+##-------------------------------
+## Create emoji reference dataframe
+##------------------------------------
+## ort emoji reference dataframe
+library(stringr)
+lines <- readLines("data/emojicode_sample.txt")
+df <- as.data.frame(do.call(rbind, strsplit(lines, split=" {2,10}")), stringsAsFactors=FALSE)
+
+# just columns that we need
+emoji <- df[6:7]
+names(emoji) <- c("code", "words")
+
+e <- stemoji$byte <- iconv(emoji$code, "UTF8", "ASCII", "byte")
+
+emoji$bemoji$code, "byt\\.")
+s <- strsplit(emoji$words, "\\.\\.")
+separated_df <- data.frame(code = unlist(e), words = unlist(s), stringsAsFactors = FALSE)
+
+# Encoding(emoji$code) <- "latin1"
+
+## Clean the code column
+# extract unicode
+str <- "[1] (\U0001f600)"
+Encoding(str) <- "unknown"
+
+location <- str_locate(emoji$code, fixed("("))
+location
+emoji$test <- str_sub(emoji$code, location[1]+2, nchar(emoji$code)-1)
+# emoji$test <- substr(emoji$code, location[1]+1, stop = nchar(emoji$code)-1)
+
+location <- str_locate(emoji$test, fixed("("))
+location
+emoji$test <- str_sub(emoji$test, location[1]+1, nchar(emoji$code))
+
+pat <- ".*\(\\U"
+pat <- ".*((\\U000[0-9a-z]+))"
+
+
+test <- regmatches(str, gregexpr(pat, str))
+test[[1]]
+
+grepl(pat, str)
+
+## Clean the words column 
+words <- emoji$words[2]
+words
+
+emoji$test <- strsplit(emoji$words, "\\.\\.")
+
+
+
+s <- strsplit(df$V2, split = ",")
+data.frame(V1 = rep(df$V1, sapply(s, length)), V2 = unlist(s))
+
+
+double <- "👎🏽"
+double
