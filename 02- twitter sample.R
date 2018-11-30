@@ -2,6 +2,7 @@
 ## Create emoji reference dataframe
 ##---------------------------------
 ## import emoji reference dataframe
+#comment
 library(stringr)
 lines <- readLines("data/emoji-test_edit.txt")
 df <- as.data.frame(do.call(rbind, strsplit(lines, split=" {2,40}")), stringsAsFactors=FALSE)
