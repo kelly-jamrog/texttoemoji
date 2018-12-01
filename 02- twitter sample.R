@@ -17,6 +17,11 @@ emoji_df$words <- paste0("(", emoji_df$words, ")")
 
 emoji_df$byte <- iconv(emoji_df$emoji, "UTF8", "ASCII", "byte")
 
+# sort by longest sequence first 
+emoji_df <- emoji_df %>%
+  mutate(nchar = nchar(byte)) %>%
+  arrange(desc(nchar))
+
 ##-------------------------------
 ## Get sample data
 ##---------------------------------
@@ -26,10 +31,6 @@ raw_tweets <- tweets
 tweets_2 <- raw_tweets %>% 
   mutate(text = iconv(text, from = "UTF8", to = "ascii", sub = "byte"))
 
-# sort by longest sequence first 
-emoji_df <- emoji_df %>%
-  mutate(nchar = nchar(byte)) %>%
-  arrange(desc(nchar))
 
 # for (i in 1:length(emoji_df$byte)) {
 #   try(if (str_detect(tweets$text[4], emoji_df$byte[i])) {
