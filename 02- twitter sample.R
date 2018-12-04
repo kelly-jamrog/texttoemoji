@@ -2,6 +2,7 @@
 ## Create emoji reference dataframe
 ##---------------------------------
 ## import emoji reference dataframe
+library(dplyr)
 library(stringr)
 lines <- readLines("data/emoji-test_edit.txt")
 df <- as.data.frame(do.call(rbind, strsplit(lines, split=" {2,40}")), stringsAsFactors=FALSE)
@@ -22,6 +23,7 @@ emoji_df <- emoji_df %>%
   mutate(nchar = nchar(byte)) %>%
   arrange(desc(nchar))
 
+save(emoji_df, file = "emoji_ref_df.rda", compress = "xz")
 ##-------------------------------
 ## Get sample data
 ##---------------------------------
@@ -53,11 +55,14 @@ texttoemoji_for_one <- function(text){
 
 
 texttoemoji <- function(column) {
+  # add catch for if do not enter a string
+  if(!inherits(column, "str")) stop("Column must be type str")
   lapply(column, function(x){ texttoemoji_for_one(x)})
 }
 
 tweets$text <- texttoemoji(tweets$text)
 
+texttoemoji(mtcars$mpg)
 
 ##-------------------------------
 ## JUNK: DELETE ME
